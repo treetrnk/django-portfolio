@@ -22,11 +22,9 @@
       }
 			body {
 				font-family: "Open Sans Condensed";
-				font-size: 200%;
-				/*
+				font-size: 32px;
 				background-color: #602b9d;
 				color: #ffffff;
-				*/
 			}
 			h1,h2,h3,h4,h5,h6 {
 				color: #8377d1;
@@ -40,6 +38,7 @@
 			#title h5,
 			#title h6 {
 				color: #ffffff;
+				text-shadow: 2px 2px 10px #222222;
 			}
 			header {
 				width: 100%;
@@ -50,6 +49,7 @@
 				color: #ffffff;
 				line-height: 75px;
 				z-index: 5;
+				background-color: #602b9d;
 			}
 			header h3 {
 				font-family: "Cabin Sketch", cursive;
@@ -82,23 +82,23 @@
 			.text-purple {
 				color: #602b9d;
 			}
-			.text-purple:hover {
+			header .text-purple:hover {
 				color: #602b9d;
 				border-bottom: 2px solid #5efc8d;
 			}
 			section#title {
 				height: 100%;
 				min-height: 500px;
-				background: #45d2b0;
+				background: #602b9d;
 				margin: 0;
 				padding: 0;
 				color: #ffffff;
 				vertical-align: middle;
 				display: flex;
 				align-items: center;
+				/*
 				background-image: linear-gradient( rgba(104,42,175,.85), rgba(104,42,175,.85) ),
     											url('../images/programming.png');
-				/*
 				background-image: linear-gradient( rgba(69,210,176,.85), rgba(69,210,176,.85) ),
     											url('../images/programming.png');
 				*/
@@ -134,4 +134,42 @@
 			}
 			.round {
 				border-radius: 50%;
+			}
+			.progress {
+				margin-top:10px;
+				height: 30px;
+				background-color: #8377d1;
+				text-align: right;
+			}
+			.progress-bar {
+				background-color: #5efc8d;
+				position: relative;
+			}
+			.progressvalue {
+				height: 30px;
+			}
+			.skill-level {
+				padding-right: 10px;
+				position: absolute;
+				top: 2px;
+				right: 7px;
+				z-index: 3;
+			}
+			.form-control {
+				border: 0;
+			}
+			.zero-precent {
+				width: 2%;
+			}
+			.twentyfive-precent {
+				width: 25%;
+			}
+			.fifty-precent {
+				width: 50%;
+			}
+			.seventyfive {
+				width: 75%;
+			}
+			.hundred-precent {
+				width: 100%;
 			}

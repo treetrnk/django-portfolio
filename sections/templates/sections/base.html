@@ -30,7 +30,7 @@
 					</div>
 					<div class="col-xs-10 text-right">
 						<nav>
-							<a href="#skills-a">Skills</a>
+							<a href="#skills-a">Experience</a>
 							<a href="#portfolio-a">Portfolio</a>
 							<a href="#">Contact</a>
 							<a href="#">About</a>
@@ -45,36 +45,32 @@
 				<div class="row">
 					<div class="col-xs-12 text-center">
 
-						<img src="{% static 'sections/images/face.png' %}" class="face" />
-						<h1>nathan hare</h1>
+						<div class="text-left" style="display:inline-block;">
+							<p>Hi. I'm
+							<h1>nathan hare</h1>
+							<center>
+								<img src="{% static 'sections/images/face.png' %}" width="150" class="face" />
+							</center>
+						</div>
 						
-						<h3>freelance web development, design, etc.</h3>
-
-					</div>
 				</div>
 			</div>
+			<!--
 			<div id="continue">
 				<i class="glyphicon glyphicon-menu-down"></i>
 			</div>
+			-->
 		</section>
 
 		<a name="skills-a" class="anchor"></a>
 		<section id="skills" class="padded">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4">
-						<h2>Skills</h2>
-						<p>
-							Eos eaque dolores et dicta in blanditiis illum. Distinctio dolorem sequi dolor in. Deleniti veritatis ipsa molestias sed. Quod et atque facere veritatis omnis provident rerum. Vel eos praesentium recusandae eum quia molestias repellendus. Eos iste eos expedita illum.
-						</p>
-						<p>
-							Quas qui enim quia. Ut occaecati est veniam magnam. Recusandae laborum dolore sit quia.
-						</p>
-						<p>
-							Molestias harum qui porro. Voluptate aperiam pariatur quibusdam laborum quo sit omnis mollitia. Nisi deserunt inventore maxime totam cum molestias.
-						</p>
-					</div>
-					<div class="col-sm-8">
+					<div class="col-xs-12">
+
+						<p>I design and create responsive websites...</p>
+						<img src="{% static 'sections/images/portfolio.png' %}" width="100%" class="img-responsive" />
+
 
 					</div>
 				</div>
@@ -90,30 +86,128 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2>Portfolio</h2>
+
+						<p class="text-right">
+							...with years of experience in current web technologies...
+						</p>
+
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/tabfor.png' %}" class="round img-thumbnail img-responsive" width="100%" />
-					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/employeeportal.png' %}" class="round img-thumbnail img-responsive" width="100%" />
-					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="round img-thumbnail img-responsive" width="100%" />
-					</div>
-				</div>
+
 				<br />
+			{% for skill in skills %}
 				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="img-thumbnail img-responsive" width="100%" />
+					<div class="col-md-2 col-sm-3 col-xs-4 text-right">
+						{{ skill.name }}
 					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="img-thumbnail img-responsive" width="100%" />
+					<div class="col-md-10 col-sm-9 col-xs-8">
+						<div class="progress">
+							<span class="skill-level text-purple">{{ skill.level }}</span>
+							<div class="progress-bar progress-bar-success" style="width: {{ skill.perc }}%;"></div>
+
+						</div>
 					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="img-thumbnail img-responsive" width="100%" />
+				</div>
+			{% endfor %}
+<!--
+
+								<td class="text-right">HTML5</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value seventyfive-percent">&nbsp;</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-right">CSS3</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value seventyfive-percent">&nbsp;</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-right">PHP</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value hundred-percent">&nbsp;</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-right">Coldfusion</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value seventyfive-percent"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-right">MySQL</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value seventyfive-percent"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-right">jQuery</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value fifty-percent"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-right">Django</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value twentyfive-percent"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-right">LEMP</td>
+								<td>
+									<div class="progress-bar">
+										<div class="progress-value seventyfive-percent"></div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+-->
+			</div>
+		</section>
+
+		<section id="contact" class="padded">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+					
+						<p class="text-center">If you are in need of a new website, send me a message below.</p>
+						<br />
+
+						<form>
+							<div class="row">
+							<div class="col-xs-12">
+							<input type="text" class="form-control input-lg" placeholder="NAME" />
+							</div></div>
+							<div class="row">
+							<div class="col-xs-12">
+							<input type="text" class="form-control input-lg" placeholder="EMAIL" />
+							</div></div>
+							<div class="row">
+							<div class="col-xs-12">
+							<textarea class="form-control input-lg" placeholder="REQUEST" rows="6"></textarea>
+							</div></div>
+							<div class="row">
+							<div class="col-xs-12">
+							<button type="submit" class="btn btn-success btn-lg" >SUBMIT</button>
+							</div></div>
+						</form>
+
 					</div>
 				</div>
 			</div>
@@ -124,7 +218,30 @@
 		<script src="{% static 'sections/js/jquery-3.2.1.min.js' %}"></script>
 		<script>
 			$(document).ready(function() {
+
+				var scrollLoc = $(window).scrollTop();
+
+				$(window).on('scroll', function() {
+					if ($(window).scrollTop() > scrollLoc) {
+						
+						if (!$('header').hasClass('hiding')) {
+							$('header').slideUp('fast');
+							$('header').addClass('hiding');
+						}
+						scrollLoc = $(window).scrollTop();
+
+					} else {
+
+						if ($('header').hasClass('hiding')) {
+							$('header').slideDown('fast');
+							$('header').removeClass('hiding');
+						}
+						scrollLoc = $(window).scrollTop();
+
+					}
+				});
 				
+				/*
 				var titletop = $('#title').offset().top;
 				var skillstop = $('#skills').offset().top;
 				var portfoliotop = $('#portfolio').offset().top;
@@ -142,6 +259,7 @@
 						$('header').removeClass('bg-white');
 					}
 				});
+				*/
 
 			});
 		</script>
