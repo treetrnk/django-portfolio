@@ -1,0 +1,77 @@
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="75"
+   height="75"
+   viewBox="0 0 178.59375 178.59376"
+   version="1.1"
+   id="logo-img"
+   inkscape:export-filename="/home/nathan/git/nhportfolio/sections/static/sections/images/logo.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.79606107"
+     inkscape:cx="75.89462"
+     inkscape:cy="449.92881"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1916"
+     inkscape:window-height="1047"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-118.40623)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:103.91555023px;line-height:1.25;font-family:Pacifico;-inkscape-font-specification:Pacifico;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.59788871"
+       x="32.26104"
+       y="254.98402"
+       id="logo-text"
+       inkscape:label="#text14"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         x="32.26104"
+         y="254.98402"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#ffffff;stroke-width:2.59788871">nh</tspan></text>
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:0.26458332"
+       d="m 128.61491,245.57328 c 1.03527,5.95837 0.17327,20.15103 9.69082,16.02455 3.98476,-1.42772 7.7771,-4.23868 1.88575,-0.65713 -9.05155,5.29213 1.3236,-0.7505 5.22832,-6.80424 12.32848,-16.80674 21.03654,-37.28662 20.94921,-58.37729 -0.95219,-14.40369 -9.92405,-26.91273 -19.44338,-37.13722 -15.36295,-15.85231 -37.63338,-27.69333 -60.225645,-23.45453 -15.323526,2.51701 -29.437312,9.51577 -42.736721,17.2615 2.279806,-1.94702 8.786408,-4.55648 2.689415,-1.23011 -16.277479,10.08666 -30.647578,25.61892 -33.653457,45.14845 -3.1846437,18.36141 0.232824,38.54178 12.675555,52.95623 15.345843,20.1204 40.992906,28.57171 65.270748,31.2266 20.612315,1.97861 42.550795,-0.46511 60.244055,-12.00744 -5.4904,4.66355 -11.14323,9.13419 -17.86474,11.92137 -20.95869,9.3153 -45.079795,8.81107 -67.10702,3.93993 C 44.924334,279.91591 24.083057,268.99312 12.049281,250.29596 0.38563216,233.47993 -1.2748978,210.95672 4.8153122,191.76531 11.61709,170.7456 30.982676,157.57284 49.335911,147.21839 69.039069,135.91295 91.410615,124.53921 114.8584,128.34034 c 24.17629,4.86475 44.93942,22.09877 56.72848,43.42252 8.21063,13.43872 6.38537,30.14419 1.44007,44.39132 -5.28479,15.65977 -12.63242,31.66781 -25.54661,42.48109 -7.75352,4.089 -17.7896,14.06463 -26.53787,7.04794 -3.23381,-3.76513 -6.28059,-11.92595 -5.17528,-18.70822 3.55794,-0.3889 9.28979,-4.94936 12.84773,-5.33866 z"
+       id="logo-circle"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccccccccccc"
+       inkscape:label="#path51" />
+  </g>
+</svg>

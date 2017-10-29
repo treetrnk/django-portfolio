@@ -1,0 +1,137 @@
+      @font-face {
+        font-family: "Open Sans";
+        src: url(../fonts/OpenSans-Regular.ttf);
+      }
+      @font-face {
+        font-family: "Open Sans Condensed";
+        src: url(../fonts/OpenSansCondensed-Light.ttf);
+      }
+      @font-face {
+        font-family: "Open Sans Condensed";
+        src: url(../fonts/OpenSansCondensed-Bold.ttf);
+				font-weight: bold;
+      }
+      @font-face {
+        font-family: "Open Sans Condensed";
+        src: url(../fonts/OpenSansCondensed-LightItalic.ttf);
+				font-style: italic;
+      }
+      @font-face {
+        font-family: "Pacifico";
+        src: url(../fonts/Pacifico-Regular.ttf);
+      }
+			body {
+				font-family: "Open Sans Condensed";
+				font-size: 200%;
+				/*
+				background-color: #602b9d;
+				color: #ffffff;
+				*/
+			}
+			h1,h2,h3,h4,h5,h6 {
+				color: #8377d1;
+			}
+			#title h3 {
+				color: #8ef9f3;
+			}
+			#title h2,
+			#title h1,
+			#title h4,
+			#title h5,
+			#title h6 {
+				color: #ffffff;
+			}
+			header {
+				width: 100%;
+				height: 75px;
+				position: fixed;
+				top: 0;
+				left: 0;
+				color: #ffffff;
+				line-height: 75px;
+				z-index: 5;
+			}
+			header h3 {
+				font-family: "Cabin Sketch", cursive;
+				color: #ffffff;
+			}
+			header a {
+				color: #ffffff;
+				margin: 0 5px;
+				text-decoration: none;
+			}
+			header a:hover {
+				color: #ffffff;
+				margin: 0 5px;
+				text-decoration: none;
+				border-bottom: 2px solid #5efc8d;
+			}
+			#logo-img {
+				width: 75px;
+			}
+
+			.logo-purple {
+				fill: #602b9d !important;
+			}
+			.bg-white {
+				background-color: #ffffff;
+				/*
+				box-shadow: 5px 5px 10px #ffffff;
+				*/
+			}
+			.text-purple {
+				color: #602b9d;
+			}
+			.text-purple:hover {
+				color: #602b9d;
+				border-bottom: 2px solid #5efc8d;
+			}
+			section#title {
+				height: 100%;
+				min-height: 500px;
+				background: #45d2b0;
+				margin: 0;
+				padding: 0;
+				color: #ffffff;
+				vertical-align: middle;
+				display: flex;
+				align-items: center;
+				background-image: linear-gradient( rgba(104,42,175,.85), rgba(104,42,175,.85) ),
+    											url('../images/programming.png');
+				/*
+				background-image: linear-gradient( rgba(69,210,176,.85), rgba(69,210,176,.85) ),
+    											url('../images/programming.png');
+				*/
+				background-size: cover;
+				background-position: center center;
+				background-attachment: fixed;
+				position: relative;
+			}
+			section#title h1 {
+				font-family: "Pacifico";
+				font-size: 300%;
+			}
+			section#title #continue {
+				cursor: pointer;
+				width: 100%;
+				text-align: center;
+				font-size: 300%;
+				position: absolute;
+				bottom: 15px;
+				color: #5efc8d;
+			}
+			section#title .face {
+				border-radius: 50%;
+				border: 5px solid #ffffff;
+				box-shadow: 5px 5px 10px #333333;
+				width: 150px;
+			}
+			.padded {
+				margin: 8% 0;
+			}
+			div.spacer {
+				height: 7%;
+			}
+			.round {
+				border-radius: 50%;
+			}
