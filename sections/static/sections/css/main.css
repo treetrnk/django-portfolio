@@ -87,7 +87,6 @@
 				border-bottom: 2px solid #5efc8d;
 			}
 			section#title {
-				height: 100%;
 				min-height: 500px;
 				background: #602b9d;
 				margin: 0;
@@ -126,11 +125,22 @@
 				box-shadow: 5px 5px 10px #333333;
 				width: 150px;
 			}
+			section#portfolio {
+				background-image: url('../images/stripes.png');
+				background-size: 100% 100%;
+			}
+			section#about {
+				background-image: url('../images/stripes2.png');
+				background-size: 100% 100%;
+			}
+			section#contact input, #contact textarea {
+				margin-bottom: 15px;
+			}
 			.padded {
 				margin: 8% 0;
 			}
 			div.spacer {
-				height: 7%;
+				height: 8%;
 			}
 			.round {
 				border-radius: 50%;
@@ -172,4 +182,8 @@
 			}
 			.hundred-precent {
 				width: 100%;
+			}
+			.drop-shadow {
+				box-shadow: 5px 5px 30px #222222;
+				background-color: #602b9d;
 			}
