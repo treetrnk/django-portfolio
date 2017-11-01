@@ -1,7 +1,118 @@
 {% extends 'sections/base.html' %}
 
 {% block content %}
+	{% load static %}
 
-	
+		<a name="title-a" id="title-a" class="anchor"></a>
+		<section id="title" class="padded">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+
+						<div class="spacer">&nbsp;</div>
+						<img src="{% static 'sections/images/face.png' %}" class="face" />
+						<h1>nathan hare</h1>
+						
+						<h3>freelance web development, design, etc.</h3>
+						<div class="spacer">&nbsp;</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<a name="experience-a" id="experience-a" class="anchor"></a>
+		<section id="experience" class="padded">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<h2>Skills</h2>
+						<p>
+							Eos eaque dolores et dicta in blanditiis illum. Distinctio dolorem sequi dolor in. Deleniti veritatis ipsa molestias sed. Quod et atque facere veritatis omnis provident rerum. Vel eos praesentium recusandae eum quia molestias repellendus. Eos iste eos expedita illum.
+						</p>
+						<p>
+							Quas qui enim quia. Ut occaecati est veniam magnam. Recusandae laborum dolore sit quia.
+						</p>
+						<p>
+							Molestias harum qui porro. Voluptate aperiam pariatur quibusdam laborum quo sit omnis mollitia. Nisi deserunt inventore maxime totam cum molestias.
+						</p>
+					</div>
+					<div class="col-sm-8">
+						<h2>&nbsp;</h2>
+
+						{% for exp in experience %}
+							<div class="row">
+								<div class="col-md-2 col-sm-3 col-xs-3 text-right">
+									{{ exp.name }}
+								</div>
+								<div class="col-md-10 col-sm-9 col-xs-9">
+									<div class="progress">
+										<div class="progress-bar text-right" data-perc="{{ exp.perc }}" style="width: {{ exp.perc }}%;">{{ exp.perc }}%</div>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+
+					</div>
+				</div>
+				<!--
+				<div class="spacer">&nbsp;</div>
+				-->
+
+			</div>
+		</section>
+		
+		<a name="portfolio-a" id="portfolio-a" class="anchor"></a>
+		<section id="portfolio" class="padded">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Portfolio</h2>
+					</div>
+				</div>
+
+				<div class="row portfolio-imgs">
+					{% for work in works %}
+						{% with work.work_image_set.first as cover_img %}
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<img src="{{ cover_img.file.url }}" width="100%" />
+							</div>
+						{% endwith %}
+					{% endfor %}
+					<div class="col-sm-3 col-xs-6 text-center">
+						<img src="#" width="100%" alt="github" />
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="contact" class="padded">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+						<h2>Contact</h2>
+
+						<form class="form">
+							<div class="form-body">
+								<div class="form-group">
+									<input type="text" name="name" placeholder="Name" class="form-control" />
+								</div>
+								<div class="form-group">
+									<input type="text" name="email" placeholder="Email" class="form-control" />
+								</div>
+								<div class="form-group">
+									<textarea name="request" placeholder="Request" class="form-control"></textarea>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
 
 {% endblock %}

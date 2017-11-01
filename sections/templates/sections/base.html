@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE HTML>
 {% load static %}
 <html lang='en'>
 	<head>
@@ -10,6 +10,7 @@
     <!---<script src="https://use.fontawesome.com/0dabb168cf.js"></script>--->
 		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 
+		<!--<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700" rel="stylesheet"> -->
 		<link rel="stylesheet" href="{% static 'sections/css/main.css' %}" />
 		<style>
 		</style>
@@ -40,110 +41,10 @@
 			</div>
 		</header>
 
-		<section id="title">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-center">
-
-						<img src="{% static 'sections/images/face.png' %}" class="face" />
-						<h1>nathan hare</h1>
-						
-						<h3>freelance web development, design, etc.</h3>
-
-					</div>
-				</div>
-			</div>
-			<div id="continue">
-				<i class="glyphicon glyphicon-menu-down"></i>
-			</div>
-		</section>
-
-		<a name="skills-a" class="anchor"></a>
-		<section id="skills" class="padded">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<h2>Skills</h2>
-						<p>
-							Eos eaque dolores et dicta in blanditiis illum. Distinctio dolorem sequi dolor in. Deleniti veritatis ipsa molestias sed. Quod et atque facere veritatis omnis provident rerum. Vel eos praesentium recusandae eum quia molestias repellendus. Eos iste eos expedita illum.
-						</p>
-						<p>
-							Quas qui enim quia. Ut occaecati est veniam magnam. Recusandae laborum dolore sit quia.
-						</p>
-						<p>
-							Molestias harum qui porro. Voluptate aperiam pariatur quibusdam laborum quo sit omnis mollitia. Nisi deserunt inventore maxime totam cum molestias.
-						</p>
-					</div>
-					<div class="col-sm-8">
-
-					</div>
-				</div>
-				<!--
-				<div class="spacer">&nbsp;</div>
-				-->
-
-			</div>
-		</section>
-
-		<a name="portfolio-a" class="anchor"></a>
-		<section id="portfolio" class="padded">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h2>Portfolio</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/tabfor.png' %}" class="round img-thumbnail img-responsive" width="100%" />
-					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/employeeportal.png' %}" class="round img-thumbnail img-responsive" width="100%" />
-					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="round img-thumbnail img-responsive" width="100%" />
-					</div>
-				</div>
-				<br />
-				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="img-thumbnail img-responsive" width="100%" />
-					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="img-thumbnail img-responsive" width="100%" />
-					</div>
-					<div class="col-md-4">
-						<img src="{% static 'sections/images/portfolio/nhwritings.png' %}" class="img-thumbnail img-responsive" width="100%" />
-					</div>
-				</div>
-			</div>
-		</section>
-
 		{% block content %}
 		{% endblock %}
+
 		<script src="{% static 'sections/js/jquery-3.2.1.min.js' %}"></script>
-		<script>
-			$(document).ready(function() {
-				
-				var titletop = $('#title').offset().top;
-				var skillstop = $('#skills').offset().top;
-				var portfoliotop = $('#portfolio').offset().top;
-
-				$(window).on('scroll', function() {
-					if ($(window).scrollTop() >= skillstop-150) {
-						$('#logo-img tspan').css('fill', '#602b9d');
-						$('#logo-img path').css('fill', '#602b9d');
-						$('header nav a').addClass('text-purple');
-						$('header').addClass('bg-white');
-					} else {
-						$('#logo-img tspan').css('fill', '#ffffff');
-						$('#logo-img path').css('fill', '#ffffff');
-						$('header nav a').removeClass('text-purple');
-						$('header').removeClass('bg-white');
-					}
-				});
-
-			});
-		</script>
+		<script src="{% static 'sections/js/main.js' %}"></script>
 	</body>
 </html>

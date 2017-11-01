@@ -31,15 +31,14 @@
 			h1,h2,h3,h4,h5,h6 {
 				color: #8377d1;
 			}
-			#title h3 {
-				color: #8ef9f3;
-			}
-			#title h2,
 			#title h1,
+			#title h2,
+			#title h3,
 			#title h4,
 			#title h5,
 			#title h6 {
 				color: #ffffff;
+				text-shadow: 2px 2px 10px #000000;
 			}
 			header {
 				width: 100%;
@@ -71,7 +70,7 @@
 			}
 
 			.logo-purple {
-				fill: #602b9d !important;
+				fill: #5873cb !important;
 			}
 			.bg-white {
 				background-color: #ffffff;
@@ -80,24 +79,21 @@
 				*/
 			}
 			.text-purple {
-				color: #602b9d;
+				color: #5873cb;
 			}
 			.text-purple:hover {
-				color: #602b9d;
+				color: #5873cb;
 				border-bottom: 2px solid #5efc8d;
 			}
 			section#title {
-				height: 100%;
 				min-height: 500px;
 				background: #45d2b0;
 				margin: 0;
-				padding: 0;
+				padding: 8% 0;
 				color: #ffffff;
 				vertical-align: middle;
-				display: flex;
-				align-items: center;
-				background-image: linear-gradient( rgba(104,42,175,.85), rgba(104,42,175,.85) ),
-    											url('../images/programming.png');
+				background-image: linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ),
+    											url('https://nathanhare.net/resources/images/pine1.png');
 				/*
 				background-image: linear-gradient( rgba(69,210,176,.85), rgba(69,210,176,.85) ),
     											url('../images/programming.png');
@@ -130,8 +126,15 @@
 				margin: 8% 0;
 			}
 			div.spacer {
-				height: 7%;
+				height: 8%;
 			}
 			.round {
 				border-radius: 50%;
+			}
+			#contact {
+				background-color: #45d2b0;
+			}
+			.portfolio-imgs div {
+				margin: 0;
+				padding: 0;
 			}
