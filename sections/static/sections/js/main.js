@@ -1,8 +1,18 @@
 $(document).ready(function() {
 	
+	/*
 	$('#experience .progress-bar').css({width: 0}, 1);
 	$('#experience .progress-bar').hide();
 	animateProgress();
+	*/
+
+	$('.waypoint').hide();
+
+	//activate('.waypoint', animateIn());
+
+	var waypoints = $('.waypoint').waypoint(function() {
+			animateIn(this.element.id);
+	});	
 
 	var titletop = $('#title-a').offset().top;
 	var experiencetop = $('#experience-a').offset().top;
@@ -24,18 +34,41 @@ $(document).ready(function() {
 			$('header nav a').removeClass('text-purple');
 			$('header').removeClass('bg-white');
 		}
-
+/*
 		animateProgress();
-
+*/
 	});
 
 });
 
+function activate(selector, response) {
+	$(window).on('scroll', function() {
+		$(selector).each(function () {
+			if ($(window).scrollTop() >= $(this).offset().top - $(window).height() * 0.5) {
+				console.log(this);
+				response($(this).attr('id'));
+			}
+		});
+	});
+}
+
+var animateIn = function (id) {
+	console.log('its trying');
+	console.log(id);
+	element = $('#' + id);
+	element.show();
+	element.addClass('animated');
+	element.addClass(element.data('animation'));
+	element.removeClass('waypoint');
+}
+
+
+/*
 function animateProgress() {
-	console.log('win top ' + $(window).scrollTop());
-	console.log('win hi ' + $(window).height());
-	console.log('exp top ' + $('#experience-a').offset().top);
-	console.log('exp hi ' + $('#experience').height());
+	//console.log('win top ' + $(window).scrollTop());
+	//console.log('win hi ' + $(window).height());
+	//console.log('exp top ' + $('#experience-a').offset().top);
+	//console.log('exp hi ' + $('#experience').height());
 	if ($(window).scrollTop() + $(window).height() >= $('#experience-a').offset().top + $('#experience').height() + 75) {
 		if (!$('#experience').hasClass('animated')) {
 			var timer = 0;
@@ -57,3 +90,4 @@ function animateProgress() {
 		}
 	}
 }
+*/

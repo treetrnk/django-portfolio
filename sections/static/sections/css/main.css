@@ -23,6 +23,7 @@
 			body {
 				font-family: "Open Sans Condensed";
 				font-size: 200%;
+				color: #344055;
 				/*
 				background-color: #602b9d;
 				color: #ffffff;
@@ -70,7 +71,7 @@
 			}
 
 			.logo-purple {
-				fill: #5873cb !important;
+				fill: #266dd3 !important;
 			}
 			.bg-white {
 				background-color: #ffffff;
@@ -85,22 +86,21 @@
 				color: #5873cb;
 				border-bottom: 2px solid #5efc8d;
 			}
+			.bg-pine {
+				background-image: linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ),
+    											url('https://nathanhare.net/resources/images/pine1.png');
+				background-size: cover;
+				background-position: center center;
+				background-attachment: fixed;
+				color: #ffffff;
+			}
 			section#title {
 				min-height: 500px;
-				background: #45d2b0;
+				background-color: #45d2b0;
 				margin: 0;
 				padding: 8% 0;
 				color: #ffffff;
 				vertical-align: middle;
-				background-image: linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ),
-    											url('https://nathanhare.net/resources/images/pine1.png');
-				/*
-				background-image: linear-gradient( rgba(69,210,176,.85), rgba(69,210,176,.85) ),
-    											url('../images/programming.png');
-				*/
-				background-size: cover;
-				background-position: center center;
-				background-attachment: fixed;
 				position: relative;
 			}
 			section#title h1 {
@@ -123,7 +123,7 @@
 				width: 150px;
 			}
 			.padded {
-				margin: 8% 0;
+				padding: 8% 0;
 			}
 			div.spacer {
 				height: 8%;
@@ -131,8 +131,11 @@
 			.round {
 				border-radius: 50%;
 			}
+			#testimonials {
+				
+			}
 			#contact {
-				background-color: #45d2b0;
+				background-color: #344055;
 			}
 			.portfolio-imgs div {
 				margin: 0;
