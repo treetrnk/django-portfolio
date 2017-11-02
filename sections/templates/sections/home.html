@@ -10,10 +10,10 @@
 					<div class="col-xs-12 text-center">
 
 						<div class="spacer">&nbsp;</div>
-						<img src="{% static 'sections/images/face.png' %}" class="face animated fadeInDown" />
-						<h1 class="animated fadeInUp">nathan hare</h1>
-						
-						<h3 class="animated fadeInUp">full stack web development, design, hosting, etc.</h3>
+						<img src="{% static 'sections/images/face.png' %}" class="face waypoint" data-animation="flipInX" />
+						<h1 class="waypoint" data-animation="fadeInUp">nathan hare</h1>
+
+						<h3 class="waypoint" data-animation="fadeInUp">full stack web development, design, hosting, etc.</h3>
 						<div class="spacer">&nbsp;</div>
 
 					</div>
@@ -25,11 +25,11 @@
 		<section id="experience" class="padded">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4 waypoint" id="experience-text" data-animation="fadeInRight">
+					<div class="col-sm-4 waypoint" id="experience-text" data-animation="fadeInUp">
 						<h2>{{ experience_text.name }}</h2>
 						{{ experience_text.body|safe }}
 					</div>
-					<div class="col-sm-8">
+					<div class="col-sm-8" id='progress-div' data-animation="fadeIn">
 						<h2>&nbsp;</h2>
 
 						{% for exp in experience %}
@@ -39,7 +39,7 @@
 								</div>
 								<div class="col-md-10 col-sm-9 col-xs-9">
 									<div class="progress">
-										<div class="progress-bar text-right waypoint" id="progressi{{ forloop.counter }}" data-animation="slideInLeft" data-perc="{{ exp.perc }}" style="width: {{ exp.perc }}%;">{{ exp.perc }}%</div>
+										<div class="progress-bar text-right waypoint" id="progress{{ forloop.counter }}" data-animation="slideInLeft" data-perc="{{ exp.perc }}" style="width: {{ exp.perc }}%;">{{ exp.perc }}%</div>
 									</div>
 								</div>
 							</div>
@@ -53,7 +53,7 @@
 
 			</div>
 		</section>
-		
+
 		<a name="portfolio-a" id="portfolio-a" class="anchor"></a>
 		<section id="portfolio" class="padded">
 			<div class="container">
@@ -67,7 +67,9 @@
 					{% for work in works %}
 						{% with work.work_image_set.first as cover_img %}
 							<div class="col-md-4 col-sm-6 col-xs-12">
-								<img src="{{ cover_img.file.url }}" width="100%" />
+								<a href="{{ cover_img.file.url }}">
+									<img src="{{ cover_img.file.url }}" width="100%" class="wrapper" data-animation="pulse" />
+								</a>
 							</div>
 						{% endwith %}
 					{% endfor %}
@@ -131,7 +133,7 @@
 						<h2>Contact</h2>
 
 						<form class="form">
-							<div class="form-body">
+							<div class="form-body waypoint" id="contactForm" data-animation="tada">
 								<div class="form-group">
 									<input type="text" name="name" placeholder="Name" class="form-control input-lg" />
 								</div>

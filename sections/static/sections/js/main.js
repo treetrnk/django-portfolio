@@ -1,18 +1,10 @@
 $(document).ready(function() {
-	
-	/*
-	$('#experience .progress-bar').css({width: 0}, 1);
-	$('#experience .progress-bar').hide();
-	animateProgress();
-	*/
 
-	$('.waypoint').hide();
+	$('.waypoint').css({opacity: 0});
 
-	//activate('.waypoint', animateIn());
-
-	var waypoints = $('.waypoint').waypoint(function() {
-			animateIn(this.element.id);
-	});	
+	$('.waypoint').each( function() {
+		animateVisible($(this));
+	});
 
 	var titletop = $('#title-a').offset().top;
 	var experiencetop = $('#experience-a').offset().top;
@@ -20,8 +12,13 @@ $(document).ready(function() {
 	var portfoliotop = $('#portfolio-a').offset().top;
 
 	$(window).on('scroll', function() {
+
+		$('.waypoint').each( function() {
+			animateVisible($(this));
+		});
+
 		if ($(window).scrollTop() >= experiencetop-75) {
-			
+
 			$('#logo-img tspan').addClass('logo-purple');
 			$('#logo-img path').addClass('logo-purple');
 			$('header nav a').addClass('text-purple');
@@ -34,60 +31,17 @@ $(document).ready(function() {
 			$('header nav a').removeClass('text-purple');
 			$('header').removeClass('bg-white');
 		}
-/*
-		animateProgress();
-*/
 	});
 
 });
 
-function activate(selector, response) {
-	$(window).on('scroll', function() {
-		$(selector).each(function () {
-			if ($(window).scrollTop() >= $(this).offset().top - $(window).height() * 0.5) {
-				console.log(this);
-				response($(this).attr('id'));
-			}
-		});
-	});
-}
-
-var animateIn = function (id) {
-	console.log('its trying');
-	console.log(id);
-	element = $('#' + id);
-	element.show();
-	element.addClass('animated');
-	element.addClass(element.data('animation'));
-	element.removeClass('waypoint');
-}
-
-
-/*
-function animateProgress() {
-	//console.log('win top ' + $(window).scrollTop());
-	//console.log('win hi ' + $(window).height());
-	//console.log('exp top ' + $('#experience-a').offset().top);
-	//console.log('exp hi ' + $('#experience').height());
-	if ($(window).scrollTop() + $(window).height() >= $('#experience-a').offset().top + $('#experience').height() + 75) {
-		if (!$('#experience').hasClass('animated')) {
-			var timer = 0;
-			var rate = 250;
-
-			$('.progress-bar').each(function() {
-				var $this = $(this);
-				var newWidth = $(this).data('perc') + '%';
-
-				setTimeout(function() {
-					$('#experience .progress-bar').fadeIn('slow');
-					$this.animate({width: newWidth}, 1000, 'linear');
-				}, timer);
-				
-				timer = timer + rate;
-			});
-
-			$('#experience').addClass('animated');
-		}
+function animateVisible(element) {
+	console.log(element.attr('id') + ' ' + element.visible());
+	if (element.visible()) {
+		element.show();
+		element.css({opacity: 100});
+		element.addClass('animated');
+		element.addClass(element.data('animation'));
+		element.removeClass('waypoint');
 	}
 }
-*/
