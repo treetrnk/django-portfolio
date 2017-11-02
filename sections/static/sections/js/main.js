@@ -43,5 +43,6 @@ function animateVisible(element) {
 		element.addClass('animated');
 		element.addClass(element.data('animation'));
 		element.removeClass('waypoint');
+		setTimeout({}, element.data('timer'));
 	}
 }

@@ -68,7 +68,7 @@
 						{% with work.work_image_set.first as cover_img %}
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<a href="{{ cover_img.file.url }}">
-									<img src="{{ cover_img.file.url }}" width="100%" class="wrapper" data-animation="pulse" />
+									<img src="{{ cover_img.file.url }}" width="100%" class="waypoint" data-animation="zoomIn" data-timer="250" />
 								</a>
 							</div>
 						{% endwith %}
@@ -130,10 +130,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
-						<h2>Contact</h2>
+						<h2 class="waypoint" data-animation="fadeInRight">Contact</h2>
 
 						<form class="form">
-							<div class="form-body waypoint" id="contactForm" data-animation="tada">
+							<div class="form-body waypoint" id="contactForm" data-animation="fadeInLeft">
 								<div class="form-group">
 									<input type="text" name="name" placeholder="Name" class="form-control input-lg" />
 								</div>
