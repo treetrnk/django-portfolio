@@ -23,14 +23,14 @@
 			body {
 				font-family: "Open Sans Condensed";
 				font-size: 200%;
-				color: #344055;
+				color: #222222;
 				/*
 				background-color: #602b9d;
 				color: #ffffff;
 				*/
 			}
 			h1,h2,h3,h4,h5,h6 {
-				color: #8377d1;
+				color: #1c6e8c;
 			}
 			#title h1,
 			#title h2,
@@ -64,14 +64,14 @@
 				color: #ffffff;
 				margin: 0 5px;
 				text-decoration: none;
-				border-bottom: 2px solid #5efc8d;
+				border-bottom: 2px solid #ef6f6c;
 			}
 			#logo-img {
 				width: 75px;
 			}
 
 			.logo-purple {
-				fill: #266dd3 !important;
+				fill: #1c6e8c !important;
 			}
 			.bg-white {
 				background-color: #ffffff;
@@ -80,11 +80,11 @@
 				*/
 			}
 			.text-purple {
-				color: #5873cb;
+				color: #1c6e8c;
 			}
 			.text-purple:hover {
-				color: #5873cb;
-				border-bottom: 2px solid #5efc8d;
+				color: #1c6e8c;
+				border-bottom: 2px solid #ef6f6c;
 			}
 			.bg-pine {
 				background-image: linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ),
@@ -96,7 +96,7 @@
 			}
 			section#title {
 				min-height: 500px;
-				background-color: #45d2b0;
+				background-color: #444e38;
 				margin: 0;
 				padding: 8% 0;
 				color: #ffffff;
@@ -132,12 +132,27 @@
 				border-radius: 50%;
 			}
 			#testimonials {
-				
+
 			}
 			#contact {
-				background-color: #344055;
+				background-color: #8db6c5;
+				color: #ffffff;
 			}
 			.portfolio-imgs div {
 				margin: 0;
 				padding: 0;
+			}
+			::selection {
+				background: #ef6f6c;
+			}
+			::-moz-selection {
+				background: #ef6f6c;
+			}
+			a::selection {
+				background: #ef6f6c;
+				color: #ffffff;
+			}
+			a::-moz-selection {
+				background: #ef6f6c;
+				color: #ffffff;
 			}

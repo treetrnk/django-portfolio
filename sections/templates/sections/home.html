@@ -24,13 +24,15 @@
 		<a name="experience-a" id="experience-a" class="anchor"></a>
 		<section id="experience" class="padded">
 			<div class="container">
+				<h2 class="text-center waypoint" data-animation="fadeInDown"><i class="glyphicon glyphicon-tree-conifer" style="color: #444e38;"></i><br />
+				<span class="waypoint" data-animation="fadeInLeft">{{ experience_text.name }}</span></h2>
+				<br />
+				<br />
 				<div class="row">
 					<div class="col-sm-4 waypoint" id="experience-text" data-animation="fadeInUp">
-						<h2>{{ experience_text.name }}</h2>
 						{{ experience_text.body|safe }}
 					</div>
 					<div class="col-sm-8" id='progress-div' data-animation="fadeIn">
-						<h2>&nbsp;</h2>
 
 						{% for exp in experience %}
 							<div class="row">
@@ -59,7 +61,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2>Portfolio</h2>
+						<h2 class="text-center waypoint" data-animation="fadeInDown"><i class="glyphicon glyphicon-tree-conifer" style="color: #444e38;"></i><br />
+						PORTFOLIO</h2>
+						<br />
 					</div>
 				</div>
 
@@ -130,7 +134,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
-						<h2 class="waypoint" data-animation="fadeInRight">Contact</h2>
+						<h2 class="text-center waypoint" data-animation="fadeInRight"><i class="glyphicon glyphicon-tree-conifer" style="color: #444e38;"></i><br />
+						CONTACT</h2>
+						<br />
 
 						<form class="form">
 							<div class="form-body waypoint" id="contactForm" data-animation="fadeInLeft">
@@ -144,7 +150,7 @@
 									<textarea name="request" placeholder="Request" rows="6" class="form-control input-lg"></textarea>
 								</div>
 								<div class="form-group">
-									<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+									<button type="submit" class="btn btn-danger btn-lg">Submit</button>
 								</div>
 							</div>
 						</form>
