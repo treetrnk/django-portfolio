@@ -5,5 +5,6 @@ from django.conf import settings
 
 appname = "sections"
 urlpatterns = [
-    url(r'^/?$', views.index, name='index'),
+    url(r'^$', views.index, name='index'),
+    url(r'^contact/$', views.contact, name='contact'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
